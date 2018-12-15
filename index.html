@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+
+	<title>Trololo</title>
+</head>
+
+<body>
+	<div class="app">
+		<!--Header-->
+		<header class="header">
+			<div class="container">
+				<button id="create-new-project">create new project</button>
+				<button id="show-projects">view all your projects</button>
+			</div>
+		</header>
+
+		<!--wr-create-project -->
+		<section class="wr-create-project">
+			<div class="container">
+				<form action="#">
+					<div class="project-name">
+						<label for="project-name">project name: </label>
+						<input id="project-name" type="text" placeholder="add project name" required>
+						<p class="error-message empty-value">add name project</p>
+						<p class="error-message same-name-project">such a project already</p>
+					</div>					
+					<div class="file_upload">  
+						<input class="input-file" id="my-file" type="file" accept=".jpg, .jpeg, .png">
+						<label tabindex="0" for="my-file" class="input-file-trigger">Select a file</label>
+						<p class="file-return"></p>
+					</div>
+					<div class="button-block">
+						<button type="button" id="create-project">create</button>
+						<button type="button" id="close-popup">close</button>
+					</div>				
+				</form>
+			</div>
+		</section>
+
+		<!--wr-project -->
+		<section class="wr-project">
+			<div class="container">
+				<h1></h1>
+			</div>
+		</section>
+
+		<!--wr-projectsList -->
+		<section class="wr-projects-list">
+			<div class="container">
+				<ul></ul>
+			</div>
+		</section>
+	</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
