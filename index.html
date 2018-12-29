@@ -21,8 +21,11 @@
 		<!--Header-->
 		<header class="header">
 			<div class="container">
-				<button id="create-new-project">create new project</button>
-				<button id="show-projects">view all your projects</button>
+				<a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+				<div>
+					<button id="create-new-project">create new project</button>
+					<button id="show-projects">view all your projects</button>
+				</div>				
 			</div>
 		</header>
 
@@ -37,7 +40,7 @@
 						<p class="error-message same-name-project">such a project already</p>
 					</div>					
 					<div class="file_upload">  
-						<input class="input-file" id="my-file" type="file" accept=".jpg, .jpeg, .png">
+						<input class="input-file" type="file" accept=".jpg, .jpeg, .png">
 						<label tabindex="0" for="my-file" class="input-file-trigger">Select a file</label>
 						<p class="file-return"></p>
 					</div>
@@ -50,15 +53,12 @@
 		</section>
 
 		<!--wr-project -->
-		<section class="wr-project">
-			<div class="container">
-				<h1></h1>
-			</div>
-		</section>
+		<section class="wr-project"></section>
 
 		<!--wr-projectsList -->
 		<section class="wr-projects-list">
 			<div class="container">
+				<a href="#" class="btn-hide-list">&times;</a>
 				<ul></ul>
 			</div>
 		</section>
